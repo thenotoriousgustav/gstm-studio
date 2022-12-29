@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.activeNav {
+  @apply underline decoration-gray-400 decoration-4 underline-offset-4;
+}
+.nonActiveNav {
+  @apply text-black;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
