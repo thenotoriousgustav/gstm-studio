@@ -5,12 +5,9 @@ export default function Services() {
   return (
     <>
       {services.map((service) => (
-        <div className='mt-44 border-t-2 border-gray-300 pt-8'>
-          <div
-            key={service.id}
-            className='flex flex-col md:flex-row md:justify-between md:space-x-14 '
-          >
-            <div key={service.id} className='w-4/12'>
+        <div className='mt-44 border-t-2 border-gray-300 pt-8' key={service.id}>
+          <div className='flex flex-col md:flex-row md:justify-between md:space-x-14 '>
+            <div className='w-4/12'>
               <span className='block text-lg'>0{service.id}.</span>
               <h1 className='mt-4 md:text-6xl'>{service.name}</h1>
             </div>

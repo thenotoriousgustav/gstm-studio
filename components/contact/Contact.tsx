@@ -28,10 +28,10 @@ export default function Contact() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className='grid grid-cols-2 gap-8 text-lg'
+      className='grid grid-cols-1 gap-8 text-lg md:grid-cols-2'
     >
       <div className='border-b border-black py-6'>
-        <label>What's your name?</label>
+        <label className='text-lg'>What's your name?</label>
         <input
           type='text'
           name='user_name'
@@ -40,7 +40,7 @@ export default function Contact() {
         />
       </div>
       <div className='border-b border-black py-6'>
-        <label>What's your email?</label>
+        <label className='text-lg'>What's your email?</label>
         <input
           type='email'
           name='user_email'
@@ -49,7 +49,7 @@ export default function Contact() {
         />
       </div>
       <div className='border-b border-black py-6'>
-        <label>What's the name of your company?</label>
+        <label className='text-lg'>What's the name of your company?</label>
         <input
           type='text'
           name='user_company'
@@ -58,7 +58,7 @@ export default function Contact() {
         />
       </div>
       <div className='border-b border-black py-6'>
-        <label>What services are you looking for?</label>
+        <label className='text-lg'>What services are you looking for?</label>
         <input
           type='text'
           name='user_services'
@@ -66,8 +66,8 @@ export default function Contact() {
           className='w-full bg-primary px-3 py-2 outline-none'
         />
       </div>
-      <div className='col-span-2 border-b border-black py-6'>
-        <label>Message</label>
+      <div className='border-b border-black py-6 md:col-span-2'>
+        <label className='text-lg'>Message</label>
         <textarea
           name='message'
           placeholder='Hi, can you help me with...'
@@ -77,7 +77,7 @@ export default function Contact() {
       <button
         type='submit'
         value='Send'
-        className='h-16 w-48 rounded-full bg-black text-xl text-white'
+        className='h-16 w-40 rounded-full bg-black text-xl text-white md:w-48'
       >
         Submit
       </button>

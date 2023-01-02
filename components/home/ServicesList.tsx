@@ -44,10 +44,9 @@ export default function ServicesList({ service, desc, category }: Props) {
           open ? "max-h-96" : "max-h-0"
         }`}
       >
-        <div className='flex space-x-10 border-t p-5'>
-          <div className='w-5/12'>
+        <div className='flex border-t p-2 md:p-4'>
+          <div className='w-full md:w-5/12'>
             <p className='text-xl md:text-2xl'>{desc}</p>
-            <p className='mr-2 text-xl md:text-2xl'>{category}</p>
           </div>
         </div>
       </div>

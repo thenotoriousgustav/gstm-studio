@@ -40,25 +40,23 @@ export default async function Post({ params: { slug } }: Props) {
     <section className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'>
       <div className='flex flex-col justify-between'>
         <div>
-          <h1 className='text-9xl'>{post.title}</h1>
+          <h1 className='text-7xl md:text-9xl'>{post.title}</h1>
         </div>
-        <div className='h-full w-full p-10'>
+        <div className='mt-8'>
           <Image
             src={urlFor(post.mainImage).url()}
             alt={post.title}
-            className='mx-auto h-96 w-96 object-cover'
+            className='mx-auto h-96 w-full object-cover md:h-full'
             width='0'
             height='0'
             sizes='100vw'
           />
         </div>
-
         <div>
           {post.categories.map((category) => (
             <p key={category._id}>{category.title}</p>
           ))}
         </div>
-
         <article className='prose'>
           <PortableText value={post.body} />
         </article>

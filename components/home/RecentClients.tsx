@@ -3,12 +3,12 @@ import { clients } from "../../data";
 
 export default function RecentClients() {
   return (
-    <section className='mt-52 border-t-2 border-black pt-6'>
+    <section className='mt-52'>
       <div>
         <h1 className='text-7xl md:text-8xl'>RECENT CLIENTS</h1>
         <p></p>
       </div>
-      <div className='hide-scroll-bar mt-28 flex snap-x snap-proximity overflow-x-scroll'>
+      <div className='hide-scroll-bar mt-16 flex snap-x snap-proximity overflow-x-scroll md:mt-20'>
         <div className='flex flex-nowrap space-x-4 md:space-x-24'>
           {clients.map((client) => (
             <div key={client.id} className='w-72'>

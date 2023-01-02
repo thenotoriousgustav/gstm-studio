@@ -3,8 +3,10 @@ import Text from "./Text";
 
 export default function Header() {
   return (
-    <section>
-      <h1 className='text-[14vw] leading-none'>GSTM.STUDIO</h1>
+    <section className='mt-10 md:mt-8 '>
+      <h1 className='text-[14vw] font-medium leading-none md:font-normal'>
+        GSTM.STUDIO
+      </h1>
       <div className='mt-8 flex flex-col font-light text-secondary md:mt-14 md:flex-row md:space-x-12'>
         <p className='text-2xl md:w-6/12 md:text-3xl'>
           We design disruptive brands for organizations that aspire to have a
