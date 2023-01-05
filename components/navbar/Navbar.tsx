@@ -38,7 +38,7 @@ export default function Navbar() {
             viewBox='0 0 24 24'
             strokeWidth={1.5}
             stroke='currentColor'
-            className='h-7 w-7'
+            className='h-8 w-8'
           >
             <path
               strokeLinecap='round'
@@ -51,12 +51,12 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <div
-        className={`fixed top-0 z-30 h-screen w-full bg-primary transition-all duration-700 ${
+        className={`fixed top-0 left-0 z-30 h-screen w-full overflow-y-hidden bg-primary transition-all duration-700 ${
           nav ? "left-0" : "-left-full"
         }`}
       >
         <ul
-          className='flex h-screen flex-col items-center justify-center space-y-4 overflow-y-hidden text-lg md:hidden'
+          className='flex h-screen flex-col space-y-4 px-6 pt-20 text-5xl font-light md:hidden'
           onClick={handleNav}
         >
           <NavList />

@@ -13,9 +13,33 @@ interface Post extends Base {
   mainImage: Image;
   slug: Slug;
   title: string;
+  link: string;
   description: string;
+  publishedAt: string;
 }
 
+interface webPosts extends Base {
+  author: Author;
+  body: Block[];
+  categories: Category[];
+  mainImage: Image;
+  slug: Slug;
+  title: string;
+  link: string;
+  description: string;
+  publishedAt: string;
+}
+interface designPosts extends Base {
+  author: Author;
+  body: Block[];
+  categories: Category[];
+  mainImage: Image;
+  slug: Slug;
+  title: string;
+  link: string;
+  description: string;
+  publishedAt: string;
+}
 interface Author extends Base {
   bio: block[];
   image: Image;

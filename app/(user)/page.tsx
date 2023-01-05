@@ -8,6 +8,7 @@ import RecentWork from "../../components/home/RecentWork";
 import Text from "../../components/home/Text";
 import About from "../../components/home/About";
 import RecentClients from "../../components/home/RecentClients";
+import { PageWrapper } from "../../components/PageWrapper";
 
 const query = groq`
 *[_type == "post"]{
@@ -23,14 +24,16 @@ export default async function HomePage() {
   const posts = await client.fetch(query);
 
   return (
-    <section className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'>
-      <Header />
-      <hr className='my-36 border-t-2 border-gray-300' />
-      <Services />
-      <RecentWork posts={posts} />
-      <RecentClients />
-      <Paragraph />
-      <About />
-    </section>
+    <PageWrapper>
+      <section className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'>
+        <Header />
+        <hr className='my-36 border-t-2 border-gray-300' />
+        <Services />
+        <RecentWork posts={posts} />
+        <RecentClients />
+        <Paragraph />
+        <About />
+      </section>
+    </PageWrapper>
   );
 }

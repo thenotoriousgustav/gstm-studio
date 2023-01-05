@@ -6,8 +6,8 @@ export default function OurTeam() {
     <section className='mt-52 border-t-2 border-gray-300'>
       <div className='pt-10 md:flex md:items-start md:space-x-10'>
         <div className='md:w-4/12'>
-          <h2 className='text-7xl md:text-8xl'>OUR TEAM</h2>
-          <p className='mt-8 text-xl font-light text-secondary md:mt-4 md:text-2xl '>
+          <h2 className='text-7xl'>OUR TEAM</h2>
+          <p className='mt-8 text-xl font-light text-secondary md:mt-4 '>
             Gstm Studio was founded by Gustam Rheza, a designer and developer.
             He's been working in the digital space for over 2 years, and has
             worked with a variety of clients, from startups to large

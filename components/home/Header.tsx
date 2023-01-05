@@ -9,11 +9,11 @@ export default function Header() {
       </h1>
       <div className='mt-8 flex flex-col font-light text-secondary md:mt-14 md:flex-row md:space-x-12'>
         <p className='text-2xl md:w-6/12 md:text-3xl'>
-          We design disruptive brands for organizations that aspire to have a
-          positive social and environmental impact.
+          We design and develop website and mobile app's for organizations that
+          aspire to have a positive social and environmental impact.
         </p>
         <p className='mt-4 text-2xl md:mt-0 md:w-5/12 md:text-3xl'>
-          We're an digital studio that makes unexpected stories for you.
+          GSTM Studio is a software house who have built hundreds of projects.
         </p>
       </div>
 

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section>
       <div className='flex flex-col justify-between md:flex-row md:items-end'>
-        <h1 className='text-7xl '>ABOUT GSTM</h1>
+        <h1 className='text-7xl '>ABOUT US</h1>
         <Link
           href='/about'
           className='hidden underline decoration-gray-400 decoration-4 underline-offset-4 md:inline-block'
@@ -14,7 +14,7 @@ export default function About() {
         </Link>
       </div>
 
-      <p className='mt-6 text-2xl lowercase md:mt-8 md:w-4/12'>
+      <p className='mt-6 text-xl lowercase md:mt-8 md:w-4/12'>
         We don’t strive to be the best design studio in the world — but the best
         one for the world.
       </p>

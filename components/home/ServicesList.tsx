@@ -7,7 +7,7 @@ interface Props {
   category: string[];
 }
 
-export default function ServicesList({ service, desc, category }: Props) {
+export default function ServicesList({ service, desc }: Props) {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(!open);
@@ -16,7 +16,7 @@ export default function ServicesList({ service, desc, category }: Props) {
     <div className='relative overflow-hidden'>
       <div className='w-full py-4 md:py-8'>
         <button
-          className='cursor-pointer text-4xl md:text-5xl'
+          className='w-full cursor-pointer text-start text-3xl md:text-5xl'
           onClick={handleClick}
         >
           {service}
@@ -45,8 +45,8 @@ export default function ServicesList({ service, desc, category }: Props) {
         }`}
       >
         <div className='flex border-t p-2 md:p-4'>
-          <div className='w-full md:w-5/12'>
-            <p className='text-xl md:text-2xl'>{desc}</p>
+          <div className='w-full md:w-7/12'>
+            <p className='text-xl font-light md:text-2xl'>{desc}</p>
           </div>
         </div>
       </div>

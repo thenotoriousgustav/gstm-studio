@@ -13,12 +13,12 @@ export default function RecentWork({ posts }: Props) {
       <div className='flex flex-col md:flex-row md:space-x-14'>
         <div className='border-black pr-8 pt-10 md:border-r-2'>
           <h1 className='text-7xl md:text-8xl'>RECENT WORK</h1>
-          <p className='mt-8 text-secondary'>
+          <p className='mt-6 text-xl text-secondary'>
             We love to build and create something beautiful to our client
           </p>
           <Link
             href='/work'
-            className='mt-4 inline-block underline decoration-gray-400 decoration-4 underline-offset-4'
+            className='mt-6 inline-block underline decoration-gray-400 decoration-4 underline-offset-4'
           >
             See more work
           </Link>
@@ -39,8 +39,15 @@ export default function RecentWork({ posts }: Props) {
                   height='0'
                   sizes='100vw'
                 ></Image>
-                <div className='mt-4 text-xl'>
-                  <p className='font-light'>{post.title}</p>
+                <div>
+                  <div className='mt-4 text-xl'>
+                    <p className='font-light'>{post.title}</p>
+                  </div>
+                  <div>
+                    {post.categories.map((cat) => {
+                      return <p key={cat._id}>{cat.title}</p>;
+                    })}
+                  </div>
                 </div>
               </ClientSideRoute>
             ))}

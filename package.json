@@ -10,6 +10,7 @@
     "@portabletext/react": "^2.0.0",
     "@sanity/image-url": "^1.0.1",
     "@sanity/vision": "^3.0.0",
+    "framer-motion": "^8.1.9",
     "next": "latest",
     "next-sanity": "^3.1.5",
     "react": "18.2.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.8",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",

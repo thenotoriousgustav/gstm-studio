@@ -3,10 +3,8 @@ import ServicesList from "./ServicesList";
 import { services } from "../../data";
 
 export default function Services() {
-  const data = { services };
-
   return (
-    <section>
+    <section id='services'>
       <div className='flex flex-col justify-between md:flex-row md:items-end'>
         <h1 className='text-7xl md:text-8xl'>WHAT WE BUILD</h1>
         <Link
@@ -16,10 +14,10 @@ export default function Services() {
           See more services
         </Link>
       </div>
-      <p className='mt-6 w-full text-secondary md:mt-4 md:w-6/12'>
-        The focus of the service we provide is more on UI animated illustration
-        websites. But we are not limited to that, because there are other
-        services.
+      <p className='mt-6 w-full text-xl text-secondary md:mt-4 md:w-6/12'>
+        The focus of the service we provide is more on UI animated websites and
+        mobile applications. But we are not limited to that. We also provide
+        services for other types of projects.
       </p>
       <Link
         href='/services'
