@@ -15,12 +15,12 @@ export default function ServicesList({ service, desc, category }: Props) {
   return (
     <div className='relative overflow-hidden'>
       <div className='w-full py-4 md:py-8'>
-        <h1
+        <button
           className='cursor-pointer text-4xl md:text-5xl'
           onClick={handleClick}
         >
           {service}
-        </h1>
+        </button>
       </div>
 
       <div className='absolute top-8 right-5 rotate-0 transition-transform duration-500 active:-rotate-90 md:top-12'>

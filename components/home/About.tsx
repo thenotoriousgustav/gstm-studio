@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section>
       <div className='flex flex-col justify-between md:flex-row md:items-end'>
-        <h1 className='text-8xl '>ABOUT GSTM</h1>
+        <h1 className='text-7xl '>ABOUT GSTM</h1>
         <Link
           href='/about'
           className='hidden underline decoration-gray-400 decoration-4 underline-offset-4 md:inline-block'

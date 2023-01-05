@@ -18,7 +18,7 @@ export default function ParentFooter() {
         </div>
 
         <div>
-          <h4 className='mt-8 text-xl md:mt-0'>Social Links:</h4>
+          <h2 className='mt-8 text-xl md:mt-0'>Social Links:</h2>
           <div className='mt-2 flex flex-col space-y-2 text-2xl font-light underline underline-offset-4'>
             <Link href='/'>Instagram</Link>
             <Link href='/'>Twitter</Link>

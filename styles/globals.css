@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply scroll-smooth;
+}
+
 .activeNav {
   @apply underline decoration-gray-400 decoration-4 underline-offset-4;
 }

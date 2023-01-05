@@ -28,7 +28,7 @@ export default function Services() {
         See more services
       </Link>
 
-      <div className='mt-12'>
+      <div className='mt-8'>
         <div className='divide-y-2 divide-black overflow-hidden border-b-2 border-black'>
           {services.map((service) => (
             <div key={service.id}>

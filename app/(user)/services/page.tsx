@@ -2,7 +2,10 @@ import Services from "../../../components/services/Services";
 
 export default function ServicesPage() {
   return (
-    <section className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'>
+    <section
+      className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'
+      id='services'
+    >
       <header className='mt-2'>
         <div>
           <h1 className='text-7xl md:text-9xl'>WHAT WE DO ✺</h1>

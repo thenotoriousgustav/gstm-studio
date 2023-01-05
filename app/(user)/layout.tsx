@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang='en'>
       <head />
       <body className='bg-primary'>
         <main className=''>

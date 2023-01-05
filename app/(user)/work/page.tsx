@@ -1,14 +1,11 @@
 import { groq } from "next-sanity";
 import { client } from "../../../lib/sanity.client";
 
-import FilterButton from "../../../components/work/FilterButton";
 import WorkList from "../../../components/work/WorkList";
 
 const query = groq`
 *[_type == "post"]{
   ...,
-  author->,
-  categories[]->,
 } | order(createdAt desc)
 `;
 
@@ -29,12 +26,8 @@ export default async function WorkPage() {
           </p>
         </div>
       </header>
-
       <hr className='mb-12 mt-24 border-t-2 border-gray-300' />
-
       <WorkList posts={posts} />
-
-      <FilterButton />
     </section>
   );
 }

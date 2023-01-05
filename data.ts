@@ -104,11 +104,4 @@ export const services = [
     img: "/assets/img/app-dev.jpg",
     category: ["Marketing Website", "Company Profile", "E-Commerce"],
   },
-  {
-    id: 4,
-    name: "Digital Marketing",
-    desc: "Cake Equity simplifies companies issuing and transferring shares, options and notes.",
-    img: "/assets/img/app-dev.jpg",
-    category: ["Marketing Website", "Company Profile", "E-Commerce"],
-  },
 ];

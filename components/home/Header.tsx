@@ -3,7 +3,7 @@ import Text from "./Text";
 
 export default function Header() {
   return (
-    <section className='mt-10 md:mt-8 '>
+    <section className='mt-10 md:mt-8' id='header'>
       <h1 className='text-[14vw] font-medium leading-none md:font-normal'>
         GSTM.STUDIO
       </h1>

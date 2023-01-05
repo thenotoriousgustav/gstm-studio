@@ -14,7 +14,7 @@ export default function Navbar() {
     <>
       <nav className='flex items-center justify-between py-8 px-4 md:px-10 lg:px-14'>
         <Link href='/' className='text-xl font-medium'>
-          GSTM
+          GSTM.STUDIO
         </Link>
 
         <ul className='hidden items-center space-x-12 text-lg md:flex'>
@@ -30,9 +30,22 @@ export default function Navbar() {
 
         <button
           onClick={handleNav}
-          className='z-40 block cursor-pointer text-xl md:hidden'
+          className='z-40 block cursor-pointer md:hidden'
         >
-          menu
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='currentColor'
+            className='h-7 w-7'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25'
+            />
+          </svg>
         </button>
       </nav>
 
