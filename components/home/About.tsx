@@ -28,7 +28,7 @@ export default function About() {
       <div className='mt-4 flex flex-col md:flex-row md:space-x-6 lg:mt-6'>
         <div className='mt-4 md:mt-0 md:w-2/6'>
           <Image
-            src='/assets/img/abstract.jpg'
+            src='/assets/img/office.jpg'
             alt='about'
             className='h-full w-full object-cover md:h-[550px]'
             width={0}
@@ -36,13 +36,13 @@ export default function About() {
             sizes='100vw'
           ></Image>
           <div className='mt-3 font-medium'>
-            <p>WISMA BNI 46</p>
-            <p>(GSTM STUDIO JAKARTA)</p>
+            <p>OUR TOWER</p>
+            <p>(NEW YORK OFFICE)</p>
           </div>
         </div>
         <div className='mt-8 md:mt-0 md:w-4/6'>
           <Image
-            src='/assets/img/abstract-1.jpg'
+            src='/assets/img/office1.jpg'
             alt='about'
             className='h-full w-full object-cover md:h-[550px]'
             width='0'
@@ -50,8 +50,8 @@ export default function About() {
             sizes='100vw'
           ></Image>
           <div className='mt-3 font-medium'>
-            <p>WISMA BNI 46</p>
-            <p>(GSTM STUDIO JAKARTA)</p>
+            <p>OUR OFFICE</p>
+            <p>(NEW YORK OFFICE)</p>
           </div>
         </div>
       </div>

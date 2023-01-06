@@ -12,7 +12,7 @@ export default function Paragraph() {
           <span>DESIGN AND DEVELOPMENT </span>
           <span>DRIVEN STUDIO</span>
           <span className='inline-flex items-center'>
-            <ImgAbout src={"/assets/img/abstract-1.jpg"} styles={"w-14"} />
+            <ImgAbout src={"/assets/img/office1.jpg"} styles={"w-14"} />
             THAT CREATES
           </span>{" "}
           <span className='-mt-2 block md:mt-0 md:inline-block'>DIGITAL</span>

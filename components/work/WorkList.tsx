@@ -14,6 +14,8 @@ export default function WorkList({ posts, webs, designs }: Props) {
   const [filtered, setFiltered] = useState([] as any);
   const [category, setCategory] = useState(posts as any);
 
+  const [active, setActive] = useState(false);
+
   useEffect(() => {
     if (category === posts) {
       setFiltered(posts);
@@ -36,12 +38,6 @@ export default function WorkList({ posts, webs, designs }: Props) {
 
   return (
     <>
-      <div className='flex space-x-10'>
-        <button onClick={() => setCategory(posts)}>all</button>
-        <button onClick={() => setCategory(webs)}>web</button>
-        <button onClick={() => setCategory(designs)}>design</button>
-      </div>
-
       <section className='grid grid-cols-1 md:grid-cols-2 md:gap-4 '>
         {filtered.map((post: any) => (
           <div key={post._id} className='mt-16'>
@@ -73,6 +69,19 @@ export default function WorkList({ posts, webs, designs }: Props) {
           </div>
         ))}
       </section>
+
+      <div className='fixed bottom-12 left-0 flex w-full justify-center'>
+        <div className='space-x-10 rounded-full bg-black py-2 px-4 text-xl text-white'>
+          <button
+            onClick={() => setCategory(posts)}
+            className='rounded-full bg-white px-3 py-1 text-black'
+          >
+            ALL
+          </button>
+          <button onClick={() => setCategory(webs)}>WEB</button>
+          <button onClick={() => setCategory(designs)}>DESIGN</button>
+        </div>
+      </div>
     </>
   );
 }

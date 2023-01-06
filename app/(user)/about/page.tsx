@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className='mt-24 '>
           <div>
             <Image
-              src='/assets/img/abstract-1.jpg'
+              src='/assets/img/office1.jpg'
               alt='about'
               className='h-full w-full object-cover md:h-[550px]'
               width={0}
@@ -22,7 +22,7 @@ export default function AboutPage() {
               sizes='100vw'
             ></Image>
             <p className='mt-6 w-full text-2xl font-light md:w-9/12'>
-              Plastic is a strategic design agency focused on providing
+              GSTM Studio is a strategic software house focused on providing
               high-quality digital services for global companies. Our team
               consists of a superb blend of thinkers, strategists, designers,
               researchers, developers and organisers. Not too big, not too
@@ -41,15 +41,14 @@ export default function AboutPage() {
           </div>
           <div className='mt-8 w-full md:mt-0 md:w-7/12'>
             <h2 className='text-3xl md:text-4xl'>
-              We are a web design and development agency. Starting as a duo,
-              Tinloof now boasts a remote team helping businesses worldwide.
+              We are a web design and development studio. GSTM Studio now boasts
+              a remote team helping businesses worldwide.
             </h2>
             <p className='mt-6 text-lg text-secondary md:mt-2'>
-              Established in 2015, Visualsgang is software house who have built
-              hundreds of projects. Visualsgang team consists of creative people
+              Established in 2021, GSTM Studio is software house who have built
+              hundreds of projects. GSTM Studio team consists of creative people
               that dedicate themselves to each and every client. Founded by
-              digital folks from several tech companies in Germany, whose
-              products are now big in Indonesia.
+              digital folks from Indonesia.
             </p>
           </div>
         </div>
