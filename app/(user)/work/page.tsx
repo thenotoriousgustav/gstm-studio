@@ -28,12 +28,21 @@ const design = groq`
 } | order(createdAt desc)
 `;
 
+const mobile = groq`
+*[_type == "post" && "Mobile" in categories[]->title]{
+  ...,
+  author->,
+  categories[]->,
+} | order(createdAt desc)
+`;
+
 export const revalidate = 15;
 
 export default async function WorkPage() {
   const posts = await client.fetch(query);
   const webs = await client.fetch(web);
   const designs = await client.fetch(design);
+  const mobiles = await client.fetch(mobile);
 
   return (
     <PageWrapper>
@@ -49,7 +58,12 @@ export default async function WorkPage() {
           </div>
         </header>
         <hr className='mb-12 mt-24 border-t-2 border-gray-300' />
-        <WorkList posts={posts} webs={webs} designs={designs} />
+        <WorkList
+          posts={posts}
+          webs={webs}
+          designs={designs}
+          mobiles={mobiles}
+        />
       </section>
     </PageWrapper>
   );

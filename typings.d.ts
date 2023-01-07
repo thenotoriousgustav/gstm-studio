@@ -40,6 +40,17 @@ interface designPosts extends Base {
   description: string;
   publishedAt: string;
 }
+interface mobilePosts extends Base {
+  author: Author;
+  body: Block[];
+  categories: Category[];
+  mainImage: Image;
+  slug: Slug;
+  title: string;
+  link: string;
+  description: string;
+  publishedAt: string;
+}
 interface Author extends Base {
   bio: block[];
   image: Image;

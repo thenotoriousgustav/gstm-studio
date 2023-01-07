@@ -15,8 +15,8 @@ export default function About() {
       </div>
 
       <p className='mt-6 text-xl lowercase md:mt-8 md:w-4/12'>
-        We don’t strive to be the best design studio in the world — but the best
-        one for the world.
+        We don’t strive to be the best digital studio in the world — but the
+        best one for the world.
       </p>
       <Link
         href='/about'
@@ -37,7 +37,7 @@ export default function About() {
           ></Image>
           <div className='mt-3 font-medium'>
             <p>OUR TOWER</p>
-            <p>(NEW YORK OFFICE)</p>
+            <p>(SCBD OFFICE)</p>
           </div>
         </div>
         <div className='mt-8 md:mt-0 md:w-4/6'>
@@ -51,7 +51,7 @@ export default function About() {
           ></Image>
           <div className='mt-3 font-medium'>
             <p>OUR OFFICE</p>
-            <p>(NEW YORK OFFICE)</p>
+            <p>(SCBD OFFICE)</p>
           </div>
         </div>
       </div>

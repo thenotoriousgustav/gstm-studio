@@ -41,62 +41,67 @@ export default async function Post({ params: { slug } }: Props) {
   return (
     <PageWrapper>
       <section className='container mx-auto max-w-full px-4 md:px-8 lg:px-10'>
-        <div className=''>
+        <div>
           <div>
             <h1 className='text-7xl md:text-9xl'>{post.title}</h1>
-            <p className='mt-4 text-xl md:text-3xl'>{post.description}</p>
-            <div className='mt-16 flex items-center justify-between '>
-              <a
-                href={post.link}
-                target='_blank'
-                className=' inline-flex items-center text-xl underline'
-              >
-                View live
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={2}
-                  stroke='currentColor'
-                  className='ml-px h-5 w-5'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25'
-                  />
-                </svg>
-              </a>
-
-              <p className='text-xl'>
-                {new Date(post._createdAt).toLocaleDateString("en-ID", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </p>
-            </div>
+            <p className='mt-3 text-xl md:mt-4 md:text-3xl'>
+              {post.description}
+            </p>
           </div>
-          <div className='mt-8'>
-            <Image
-              src={urlFor(post.mainImage).url()}
-              alt={post.title}
-              className='mx-auto h-96 w-full object-cover md:h-full'
-              width='0'
-              height='0'
-              sizes='100vw'
-            />
-          </div>
-
-          <div>
+          <div className='mt-8 md:mt-12'>
             {post.categories.map((category) => (
-              <p key={category._id}>{category.title}</p>
+              <div key={category._id}>
+                <p>CATEGORY:</p>
+                <h2 className='text-2xl'>{category.title}</h2>
+              </div>
             ))}
           </div>
-          <article className='mx-auto mt-8 w-full md:w-9/12 md:prose-lg'>
-            <PortableText value={post.body} />
-          </article>
+          <div className='mt-12 flex items-center justify-between md:mt-16 '>
+            <a
+              href={post.link}
+              target='_blank'
+              className=' inline-flex items-center text-xl underline'
+            >
+              View live
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={2}
+                stroke='currentColor'
+                className='ml-px h-5 w-5'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25'
+                />
+              </svg>
+            </a>
+
+            <p className='text-xl'>
+              {new Date(post._createdAt).toLocaleDateString("en-ID", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </p>
+          </div>
         </div>
+        <div className='mt-8'>
+          <Image
+            src={urlFor(post.mainImage).url()}
+            alt={post.title}
+            className='mx-auto h-96 w-full object-cover md:h-full'
+            width='0'
+            height='0'
+            sizes='100vw'
+          />
+        </div>
+
+        <article className='mx-auto mt-8 w-full md:w-9/12 md:prose-lg'>
+          <PortableText value={post.body} />
+        </article>
       </section>
     </PageWrapper>
   );

@@ -8,13 +8,12 @@ type Props = {
   posts: Post[];
   webs: webPosts[];
   designs: designPosts[];
+  mobiles: mobilePosts[];
 };
 
-export default function WorkList({ posts, webs, designs }: Props) {
+export default function WorkList({ posts, webs, designs, mobiles }: Props) {
   const [filtered, setFiltered] = useState([] as any);
   const [category, setCategory] = useState(posts as any);
-
-  const [active, setActive] = useState(false);
 
   useEffect(() => {
     if (category === posts) {
@@ -27,6 +26,10 @@ export default function WorkList({ posts, webs, designs }: Props) {
     }
     if (category === designs) {
       setFiltered(designs);
+      return;
+    }
+    if (category === mobiles) {
+      setFiltered(mobiles);
       return;
     }
     const filtered = posts.filter(
@@ -71,15 +74,11 @@ export default function WorkList({ posts, webs, designs }: Props) {
       </section>
 
       <div className='fixed bottom-12 left-0 flex w-full justify-center'>
-        <div className='space-x-10 rounded-full bg-black py-2 px-4 text-xl text-white'>
-          <button
-            onClick={() => setCategory(posts)}
-            className='rounded-full bg-white px-3 py-1 text-black'
-          >
-            ALL
-          </button>
+        <div className='space-x-10 rounded-full bg-black py-3 px-4 text-xl text-white'>
+          <button onClick={() => setCategory(posts)}>ALL</button>
           <button onClick={() => setCategory(webs)}>WEB</button>
           <button onClick={() => setCategory(designs)}>DESIGN</button>
+          <button onClick={() => setCategory(mobiles)}>MOBILE</button>
         </div>
       </div>
     </>

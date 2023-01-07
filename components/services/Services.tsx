@@ -21,6 +21,9 @@ export default function Services() {
                 width={0}
                 sizes='100vw'
               ></Image>
+              <div>
+                <p className='my-4 text-xl'>{service.desc}</p>
+              </div>
 
               <ul>
                 {service.category.map((category) => {
